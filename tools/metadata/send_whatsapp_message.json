@@ -1,0 +1,21 @@
+{
+  "name": "send_whatsapp_message",
+  "description": "Send a WhatsApp message to a contact.",
+  "module": "tools.whatsapp.actions",
+  "function": "send_message",
+  "requires_confirmation": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "contact_name": {
+        "type": "string",
+        "description": "The WhatsApp contact name"
+      },
+      "message": {
+        "type": "string",
+        "description": "The message to send"
+      }
+    },
+    "required": ["contact_name", "message"]
+  }
+}
